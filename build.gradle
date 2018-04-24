@@ -2,6 +2,9 @@ group 'com.rprtr258'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
+apply plugin: "application"
+
+mainClassName = "com.rprtr258.Main"
 
 sourceCompatibility = 1.8
 
