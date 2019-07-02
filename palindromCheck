@@ -1,0 +1,7 @@
+#!node
+
+let fs = require("fs");
+let Phrase = require("rprtr258palindrome");
+
+let text = fs.readFileSync("phrases.txt", "utf-8");
+console.log(text.split("\n").filter(s => new Phrase(s).palindrome()).join("\n"));
